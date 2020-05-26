@@ -22,12 +22,12 @@ public class AsciiHangman {
     // a map from number of wrong guesses, to the character that will be displayed once we've reached that many wrong guesses
     // for example, if we have at least one wrong guess, we'll replace the 1 in the picture above with O to make the head
     private static Map<Integer, String> NUM_WRONG_TO_CHAR = Map.of(
-        1, "O",
-        2, "|",
-        3, "\\",
-        4, "/",
-        5, "/",
-        6, "\\"
+        1, "O",  // head
+        2, "|",  // body
+        3, "\\", // left arm
+        4, "/",  // right arm
+        5, "/",  // left leg
+        6, "\\"  // right leg
     );
 
     // after this many wrong guesses the picture is complete, and the game is over
