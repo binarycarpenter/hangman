@@ -17,7 +17,7 @@ public class Hangman {
     private void playUntilQuit() {
         boolean keepPlaying = true;
         while (keepPlaying) {
-            new Game(userInteractions).play();
+            new Game(userInteractions);
             keepPlaying = userInteractions.wantToPlayAgain();
         }
     }
